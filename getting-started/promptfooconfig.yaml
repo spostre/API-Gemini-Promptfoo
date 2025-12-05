@@ -7,6 +7,7 @@ description: 'Getting started'
 prompts:
   - 'Convert this English to {{language}}: {{input}}'
   - 'Translate to {{language}}: {{input}}'
+  
 
 env:
  GEMINI_API_KEY: AIzaSyDxJYgy4yOIgUnOr5VoTfgwSrd4smjn9zs

@@ -1,0 +1,30 @@
+-Actúa como programador senior y explica conceptos complejos con metáforas y casos de estudio para un estudiante junior.
+-Actúa como experto en memoria y explica las variables como cajas etiquetadas usando teoría y código.
+-Actúa como experto en datos numéricos y explica la diferencia entre enteros y decimales en Python con un caso de facturación.
+-Actúa como experto en texto y enseña qué es un string y cómo escribir frases en código con ejemplos claros.
+-Actúa como líder técnico de Clean Code y explica cómo y por qué poner comentarios en el código mediante un caso de trabajo en equipo.
+-Actúa como experto en UX backend y muestra cómo usar la función input para crear un flujo interactivo con el usuario.
+-Actúa como experto en tipado y explica cómo convertir texto a entero (casting) para solucionar errores de cálculo.
+-Actúa como experto en Python moderno y enseña a usar f-strings para mezclar texto y variables de forma elegante.
+-Actúa como ingeniero matemático y enseña los operadores básicos y el módulo con ejemplos de lógica de negocio.
+-Actúa como experto en control de flujo y explica los operadores de comparación con una tabla de verdad y código.
+-Actúa como arquitecto de software y explica los operadores lógicos and/or con un caso de estudio de login.
+-Actúa como programador senior y enseña a usar else para manejar condiciones no cumplidas con un ejemplo de acceso denegado.
+-Actúa como experto en árboles de decisión y explica el uso de elif para múltiples opciones con un sistema de calificaciones.
+-Actúa como ingeniero de datos y explica qué es una lista y cómo agrupar datos usando una metáfora visual.
+-Actúa como experto en arrays y enseña a acceder a elementos de una lista por su índice explicando el conteo desde cero.
+-Actúa como desarrollador backend y explica cómo agregar elementos a una lista con append simulando un carrito de compras.
+-Actúa como experto en limpieza de datos y muestra cómo eliminar elementos erróneos de una lista y su efecto en los índices.
+-Actúa como arquitecto de seguridad y explica la inmutabilidad de las tuplas frente a las listas con un caso de uso.
+-Actúa como experto en algoritmos y explica los diccionarios clave-valor usando la metáfora de una agenda telefónica.
+-Actúa como experto en JSON y enseña a añadir campos nuevos a un diccionario existente paso a paso.
+-Actúa como matemático experto en conjuntos y explica cómo usar sets para eliminar duplicados de una lista de correos.
+-Actúa como experto en automatización y explica el funcionamiento del ciclo for para recorrer listas eficientemente.
+-Actúa como experto en secuencias y explica la función range dentro de un for para realizar iteraciones numéricas controladas.
+-Actúa como desarrollador de videojuegos y enseña el ciclo while creando un juego de adivinar números.
+-Actúa como experto en optimización y explica cómo usar break para detener un ciclo inmediatamente al encontrar un dato.
+-Actúa como programador detallista y muestra cómo usar continue para saltar iteraciones y filtrar datos sin romper el ciclo.
+-Actúa como arquitecto de software y enseña a crear funciones con def para aplicar el principio DRY y organizar el código.
+-Actúa como experto en comunicación entre módulos y explica parámetros y argumentos usando una metáfora de máquina procesadora.
+-Actúa como experto en flujo de datos y explica la diferencia entre imprimir y usar return para devolver valores reutilizables.
+-Actúa como experto en gestión de memoria y explica el alcance (scope) de las variables locales y globales visualmente.
