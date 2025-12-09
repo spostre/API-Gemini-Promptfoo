@@ -1,33 +1,100 @@
-# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
 description: 'Getting started'
-# Optionally set API keys here instead of exporting environment variables.
-# Never commit real keys to source control.
-# env:
-#   OPENAI_API_KEY: sk-...
+
 prompts:
-  - 'Convert this English to {{language}}: {{input}}'
-  - 'Translate to {{language}}: {{input}}'
+  - file://Prompt AI.txt
   
 
 env:
- GEMINI_API_KEY: AIzaSyDxJYgy4yOIgUnOr5VoTfgwSrd4smjn9zs
+ GEMINI_API_KEY: ---
 
 providers:
   - "google:gemini-2.5-pro"
-  # Or setup models from other providers
-  # - anthropic:messages:claude-sonnet-4-5-20250929
-  # - vertex:gemini-2.5-pro
 
 tests:
+  # Test 1: Variables y asignación
   - vars:
-      language: French
-      input: Hello world
-    assert:
-      - type: contains
-        value: 'Bonjour le monde'
-  - vars:
-      language: Spanish
-      input: Where is the library?
+      input: variables y asignación
     assert:
       - type: icontains
-        value: 'Dónde está la biblioteca'
+        value: 'memoria'
+      - type: icontains
+        value: 'etiqueta'
+      - type: javascript
+        value: output.length > 200
+  
+  # Test 2: Tipos de datos numéricos
+  - vars:
+      input: tipos de datos numéricos (int, float)
+    assert:
+      - type: icontains
+        value: 'precisión'
+      - type: icontains
+        value: 'entero'
+      - type: javascript
+        value: output.includes('float') || output.includes('decimal')
+  
+  # Test 3: Strings y manipulación de texto
+  - vars:
+      input: strings y manipulación de texto
+    assert:
+      - type: icontains
+        value: 'texto'
+      - type: icontains
+        value: 'cadena'
+      - type: javascript
+        value: output.length > 150
+  
+  # Test 4: Funciones y modularización
+  - vars:
+      input: funciones y modularización
+    assert:
+      - type: icontains
+        value: 'función'
+      - type: icontains
+        value: 'reutilizable'
+      - type: javascript
+        value: output.includes('def ') || output.includes('return')
+  
+  # Test 5: Condicionales (if/else)
+  - vars:
+      input: condicionales if/else
+    assert:
+      - type: icontains
+        value: 'condición'
+      - type: icontains
+        value: 'if'
+      - type: javascript
+        value: output.length > 200
+  
+  # Test 6: Bucles (for/while)
+  - vars:
+      input: bucles for y while
+    assert:
+      - type: icontains
+        value: 'iteración'
+      - type: icontains
+        value: 'ciclo'
+      - type: javascript
+        value: output.includes('for') || output.includes('while')
+  
+  # Test 7: Listas y arrays
+  - vars:
+      input: listas y arrays
+    assert:
+      - type: icontains
+        value: 'lista'
+      - type: icontains
+        value: 'índice'
+      - type: javascript
+        value: output.includes('[') && output.includes(']')
+  
+  # Test 8: Diccionarios y estructuras clave-valor
+  - vars:
+      input: diccionarios y estructuras clave-valor
+    assert:
+      - type: icontains
+        value: 'clave'
+      - type: icontains
+        value: 'valor'
+      - type: javascript
+        value: output.includes('{') || output.includes('dict')
